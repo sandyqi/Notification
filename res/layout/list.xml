@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+     <TextView
+         android:id="@+id/notificationCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:text="Notification Center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/refresh"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Refresh"
+        android:textColor="@color/echo_blue" />
+
+</LinearLayout>
+   
+     <TextView
+        android:id="@+id/showcount"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:text="Number of Notification"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:layout_gravity="center"/>
+
+	<ListView
+	    android:id="@+id/android:list"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center" />
+	
+	<TextView
+	    android:id="@+id/android:empty"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Notification Box Empty"
+	    android:textColor="@color/echo_orange"
+	    android:textSize="30sp" />
+
+</LinearLayout>
